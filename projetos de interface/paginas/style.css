@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: auto;
+}
+#bodyindex {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    border: red solid 0px;
+    font-family: "Open Sans", sans-serif;
+}
+#bodyformulario {
+    padding: 20px;
+    margin: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+.bodypagina1 {
+    background-color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+}
+.bodypagina3 {
+    background-color: rgb(255, 0, 0);
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+.bodypagina4 {
+    background-color: rgb(0, 0, 0);
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+.bodypagina5 {
+    background-color: rgb(0, 8, 255);
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+.fieldsetpadrao input {
+    background-color: rgb(255, 255, 255);
+}
+.nav {
+    list-style: none;
+    border: 3px solid black;
+    float: left;
+}
+/* Estilos para o menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Estilos para as sublistas */
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #6b6b6b;
+}
+
+nav ul ul li a {
+    padding: 10px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+nav ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #333;
+}
+
+.rodape {
+    background-color: black;
+    color: wheat;
+    height: auto;
+    width: 100%;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+.rodape a {
+    text-decoration: none;
+    color: wheat;
+}
+.rodape-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 40px 5px 30px 10px;
+}
+.rodape span {
+    font-size: 18px;
+    color: aqua;
+}
+.rodape-copyright {
+    width: calc(100% - 20px);
+    background-color: darkcyan;
+    padding: 10px;
+    text-align: center;
+    margin: 0px;
+}
