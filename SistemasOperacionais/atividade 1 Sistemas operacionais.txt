@@ -1,0 +1,25 @@
+O processador (CPU) segue um ciclo fundamental chamado “o ciclo de busca, decodificação e execução” para processar uma instrução. Todas as etapas do ciclo têm um papel indispensável na conversão uma instrução de software para uma ação executada pela hardware, abaixo, forneço as descrições das três etapas:
+
+Busca. A CPU flui a próxima instrução a ser processada da memória RAM, o endereço dessa instrução é indicado pelo Contador de Programa, que mantém o endereço da próxima instrução a ser executada.
+
+O barramento de endereço carrega o endereço na próxima instrução com seu próprio endereço
+
+A memória RAM cozinha a instrução correspondente no barramento de dados.
+
+Instalação de instruções: cão então é transferido para o registrador de instruções PC é então incrementado via a próxima instrução a ser processada.
+
+2. Decodificação: Agora que a instrução está carregada no registrador de instruções, a CPU precisa descobrir o que ela deve fazer. É aí que entra o decodificador de instruções. Na CPU, há uma parte que se chama "unidade de controle", que contém o decodificador de instruções, sendo sua função, interagir com o registrador de instrução, entender quais bits são os códigos de operação e informar aos outros componentes da CPU o que deve ser feito. Se a instrução for A, faça isso e aquilo. Se for B, faça desta e daquela maneira.
+
+Essencialmente, a unidade de controle examina os bits na instrução e decide quais sinais de controle transmitir. Os sinais de controle são sinais eletrônicos que formatam a CPU para a operação a ser realizada. Basicamente, ele ativa ou desativa os diferentes componentes internos do CPU, como ALUs, registradores e barramentos.
+
+3. Execução: É a execução da instrução decodificada. A CPU realiza essa operação, sendo ela aritmética, lógica, leitura, escrita de memória, etc...
+
+Os dados necessários são enviados para a ALU (Unidade de Lógica Aritmética), que é responsável por realizar a operação e armazena-lo em um registrador, ou na memória, e se a instrução envolver controle de fluxo (como saltos ou chamadas de função), o contador de programa pode ser atualizado para um novo endereço, dependendo do resultado da operação.
+
+Esse ciclo de Busca-Decodificação-Execução é repetido continuamente para cada instrução em sequência, ocorrendo bilhões de vezes por segundo em CPUs modernas, garantindo a execução fluida dos programas de software.
+
+Resumo de como é executado:
+Busca: (PC) -> [Memória] -> (IR)
+Decodificação: (IR) -> [Decodificador de Instruções] -> Sinais de Controle
+Execução: [ALU ou Memória] -> (Resultado)
+Esse ciclo é a base do funcionamento de qualquer CPU moderna.

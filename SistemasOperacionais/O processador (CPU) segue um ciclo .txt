@@ -1,0 +1,29 @@
+O processador (CPU) segue um ciclo fundamental conhecido como o ciclo de Busca, Decodificação e Execução para processar uma instrução. Cada uma dessas etapas é essencial para converter uma instrução de software em uma ação executada pelo hardware. Vamos detalhar essas três etapas:
+
+1. Busca (Fetch)
+Descrição: Nesta etapa, a CPU busca a próxima instrução a ser executada na memória principal (RAM). A posição dessa instrução é indicada pelo Contador de Programa (PC, ou Program Counter), que armazena o endereço da próxima instrução.
+Processo:
+O endereço da próxima instrução é carregado no barramento de endereços.
+A memória RAM coloca a instrução correspondente no barramento de dados.
+A instrução é então carregada no registrador de instruções (IR, ou Instruction Register).
+O contador de programa (PC) é incrementado para apontar para a próxima instrução.
+2. Decodificação (Decode)
+Descrição: Com a instrução agora carregada no registrador de instruções, a CPU precisa entender o que essa instrução deve fazer. Nesta etapa, a instrução é decodificada pelo decodificador de instruções (parte da unidade de controle da CPU).
+Processo:
+A unidade de controle interpreta os bits da instrução, determinando qual operação será realizada.
+Com base na instrução, a unidade de controle ativa os sinais de controle apropriados, que configuram os diferentes componentes da CPU (como a ALU, os registradores, e os barramentos) para a execução da instrução.
+3. Execução (Execute)
+Descrição: A instrução decodificada é finalmente executada. Durante essa fase, a CPU realiza a operação especificada (que pode ser uma operação aritmética, lógica, leitura/escrita de memória, etc.).
+Processo:
+Se a instrução for uma operação aritmética ou lógica, os dados necessários são enviados para a Unidade Lógica e Aritmética (ALU).
+A ALU realiza a operação e armazena o resultado em um registrador ou na memória.
+Se a instrução envolver controle de fluxo (como saltos ou chamadas de função), o contador de programa pode ser atualizado para um novo endereço, dependendo do resultado da operação.
+Esse ciclo de Busca-Decodificação-Execução é repetido continuamente para cada instrução em sequência, ocorrendo bilhões de vezes por segundo em CPUs modernas, garantindo a execução fluida dos programas de software.
+
+Resumo Visual:
+Embora eu não possa desenhar diretamente aqui, a visualização do ciclo seria algo assim:
+
+Busca: (PC) -> [Memória] -> (IR)
+Decodificação: (IR) -> [Decodificador de Instruções] -> Sinais de Controle
+Execução: [ALU ou Memória] -> (Resultado)
+Esse ciclo é a base do funcionamento de qualquer CPU moderna.
